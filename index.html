@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="First_Name" class="fname" placeholder="Enter First Name" required>
+        <br><br>
+
+        <label for="mname">Middle Name:</label><br>
+        <input type="text" id="mname" name="Middle_Name" class="mname" placeholder="Enter Middle Name" required>
+        <br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="Last_Name" class="lname" placeholder="Enter Last Name" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" class="dob" required>
+        <br><br>
+
+        <label for="email">Email Id:</label><br>
+        <input type="email" id="email" name="email" class="email" placeholder="Enter Email Id" required>
+        <br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" class="password" placeholder="Enter Password" 
+        pattern="[0-9] {10}" minlength="8" title="Please enter minimum 8 character" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value ="male" class="gender" >
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value ="female" class="gender" >
+        <label for="female">Female</label><br><br>
+
+        <label for="state">Select State:</label>
+        <select>
+            <option disabled selected>Select Your State</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="maharastra">Maharastra</option>
+            <option value="madhya pradesh">Madhya Pradesh</option>
+            <option value="uttar pradesh">Uttar Pradesh</option>
+        </select><br><br>
+
+        <label for="documents">Select Documents You Have:</label><br>
+
+        <input type="checkbox" value="Aadhar_Card">
+        <label>Aadhar Card</label>
+        <input type="checkbox" value="Passport">
+        <label>Passport</label>
+        <input type="checkbox" value="Driving_lic">
+        <label>Driving Licence</label>
+        <br><br>
+
+
+        
+        <!-- <button type="button">Submit</button>           #By using <button> tag validation popup message could not appear -->
+        <!-- <input type="submit">              #By using <input type> tag validation popup message appear using title tag -->
+
+         <!-- <a href="https://www.google.com" target="_blank">    #invalid Syntax input type is not work within <a>
+            <input type="button">Submit</button>
+        </a> -->
+    
+        <!-- <a href="https://www.google.com" target="_blank">     #valid Syntax if you want to use link on button
+            <button type="button">Submit</button>
+        </a> -->
+    
+    </form>
+</body>
+</html>
