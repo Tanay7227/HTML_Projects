@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practices Project 1</title>
+  </head>
+  <body>
+    <h2>Contact Us Form</h2>
+    <form action="#" method="post">
+      <label for="name">Enter Your Full Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="fname"
+        placeholder="Enter Your Name"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Enter Your Email Id:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="email"
+        placeholder="Enter Your Email Id"
+        required
+      />
+      <br /><br />
+
+      <label for="phone">Enter Your Mobile Number:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{10}"
+        placeholder="Enter Your 10-Digit Mobile Number"
+        title="Please enter a valid 10-digit mobile number"
+        required
+      />
+      <!-- <input type="tel" id="phone" name="phone" class="Mnumber" placeholder="Enter Your Mobile Number" pattern="[0-9]{10}" required> -->
+      <br /><br />
+
+      <label for="option">Enter Your Subject:</label><br />
+      <select id="option" name="subject" class="option">
+        <option disabled selected>Select Your Option</option>
+        <option value="mobile">Mobile</option>
+        <option value="tv">TV</option>
+        <option value="laptop">Laptop</option>
+        <option value="electricItem">Electric Item</option>
+      </select>
+      <br /><br />
+
+      <label>Gender:</label><br />
+      <input type="radio" name="gender" value="male" required /> Male
+      <input type="radio" name="gender" value="female" /> Female
+
+      <br /><br />
+
+      <label>Hobbies:</label><br />
+      <input type="checkbox" name="hobbies" value="reading" required /> Reading
+      <input type="checkbox" name="hobbies" value="music" /> Music
+      <input type="checkbox" name="hobbies" value="sports" /> Sports
+
+      <label for="message">Enter Your Message Here:</label><br />
+      <textarea
+        placeholder="Enter Your Message"
+        id="message"
+        name="message"
+        rows="3"
+        cols="40"
+      ></textarea>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
